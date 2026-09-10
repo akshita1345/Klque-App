@@ -1,0 +1,145 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.otp-input {
+  width: 50px !important;
+  height: 50px;
+  margin: 0;
+  padding: 7.5px 13px;
+  font-size: 22px;
+  background: transparent !important;
+}
+
+div:has(input) {
+  justify-content: space-between;
+}
+
+.active {
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.text-ellipsis {
+  width: 100%;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+.has-child-active {
+  background-color: rgba(var(--menu-hover-background)) !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+}
+
+.tag-primary {
+  color: hsl(var(--primary));
+  background-color: rgba(var(--primary-light));
+  padding: 3px 8px;
+  font-size: 0.8125rem;
+  border-radius: 3px;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: transparent !important;
+}
+
+.react-tel-input .flag-dropdown.invalid-number {
+  border-color: hsl(var(--input)) !important;
+}
+
+.select__control {
+  background-color: hsl(var(--background)) !important;
+}
+
+.select__single-value {
+  color: hsl(var(--secondary-foreground)) !important;
+}
+
+.select__control::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: red !important;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: red !important;
+}
+.infinite-scroll-component {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.popover-content {
+  animation: slideIn 0.2s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.notification-dot {
+  animation: pulse 2s infinite;
+}
+
+.notifications-content {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.notification-card {
+  animation: slideIn 0.2s ease-out forwards;
+  opacity: 0;
+}
