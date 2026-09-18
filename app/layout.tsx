@@ -34,7 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* No direct Google Fonts links needed anymore */}
+        <link rel="icon" href="/images/logos/logo.PNG" />
+        <link rel="shortcut icon" href="/images/logos/klque-logo.PNG" />
+        <link rel="apple-touch-icon" href="/images/logos/klque-logo.PNG" />
       </head>
       <body
         className={inter.className}
