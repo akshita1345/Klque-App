@@ -206,7 +206,7 @@ export const getProfileSummary = async (userData: any) => {
 
     try {
         const response = await openai.chat.completions.create({
-            model: "gpt-4o-search-preview",
+            model: "perplexity/sonar",
             messages: [
                 {
                     role: "system",

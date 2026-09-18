@@ -140,7 +140,7 @@ export const webBrowsingTool = (userId: string) => {
                 try {
                     // Primary: Use search-enabled model
                     const response = await openai.chat.completions.create({
-                        model: "gpt-4o-mini-search-preview",
+                        model: "perplexity/sonar",
                         messages: [{ role: "user", content: prompt }],
                         temperature: 0.1,
                     });
@@ -156,7 +156,7 @@ export const webBrowsingTool = (userId: string) => {
                         toolInput: { url, query, searchType },
                         result: content,
                         sources: Array.from(new Set(urls)),
-                        meta: { model: "gpt-4o-mini-search-preview" }
+                        meta: { model: "perplexity/sonar" }
                     });
 
                     return formatSearchResult({
@@ -165,7 +165,7 @@ export const webBrowsingTool = (userId: string) => {
                             : `🔍 Live Web Results (${dateString})`,
                         content,
                         sources: [],
-                        meta: { model: "gpt-4o-mini-search-preview" }
+                        meta: { model: "perplexity/sonar" }
                     });
 
                 } catch (error) {
